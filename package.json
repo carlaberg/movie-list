@@ -1,0 +1,32 @@
+{
+  "name": "movie-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve --open --mode=development --port 8082",
+    "cypress:open": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1",
+    "cypress": "^8.4.1"
+  },
+  "dependencies": {
+    "@humblebee/styled-components-breakpoint": "^2.1.4",
+    "bootstrap": "^5.1.0",
+    "html-webpack-plugin": "^5.3.2",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-beta.6",
+    "react-dom": "^17.0.2",
+    "styled-components": "^4.4.1"
+  }
+}
