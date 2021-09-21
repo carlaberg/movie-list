@@ -4,5 +4,6 @@ describe('Movie list tests', () => {
     cy.visit('/')
     cy.get('.movie-list li')
       .should('have.length', 6)
+      
   })
 })
