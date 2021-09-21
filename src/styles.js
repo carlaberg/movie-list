@@ -36,7 +36,9 @@ export const ActiveMovieCol = styled.div`
   padding: ${({ theme }) => theme.gutter};
 `
 
-export const List = styled.ul``
+export const List = styled.ul`
+  padding-left: 0;
+`
 
 export const ListItem = styled.li`
   display: flex;
