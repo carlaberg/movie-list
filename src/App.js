@@ -82,10 +82,10 @@ const App = () => {
             {isLoading && 'Loading...'}
             <List className="movie-list">
               {filteredMovies.map((movie) => (
-                <ListItem onClick={() => setActiveMovie(movie)} key={movie.id}>
-                  <EpisodeNumber>Episode {movie.fields.episode_id}</EpisodeNumber>
-                  <EpisodeTitle>{movie.fields.title}</EpisodeTitle>
-                  <EpisodeDate>{movie.fields.release_date}</EpisodeDate>
+                <ListItem className="list-item" onClick={() => setActiveMovie(movie)} key={movie.id}>
+                  <EpisodeNumber className="episode-number">Episode {movie.fields.episode_id}</EpisodeNumber>
+                  <EpisodeTitle className="episode-title">{movie.fields.title}</EpisodeTitle>
+                  <EpisodeDate className="episode-date">{movie.fields.release_date}</EpisodeDate>
                 </ListItem>
               ))}
             </List> 
@@ -95,9 +95,9 @@ const App = () => {
             {error && <div>{error.message}</div>}
             {activeMovie && (
               <>
-                <ActiveMovieTitle>{activeMovie.fields.title}</ActiveMovieTitle>
-                <ActiveMovieDescription>{activeMovie.fields.opening_crawl}</ActiveMovieDescription>
-                <DirectedBy>Directed By: {activeMovie.fields.director}</DirectedBy>
+                <ActiveMovieTitle className="active-movie-title">{activeMovie.fields.title}</ActiveMovieTitle>
+                <ActiveMovieDescription className="active-movie-description">{activeMovie.fields.opening_crawl}</ActiveMovieDescription>
+                <DirectedBy className="directed-by">Directed By: {activeMovie.fields.director}</DirectedBy>
               </>
             )}
           </ActiveMovieCol>
